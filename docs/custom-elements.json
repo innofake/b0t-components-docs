@@ -1,0 +1,295 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "packages/switch/components/Switch.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "A control that allows a user to switch a value on or off.\n\n## Installation\n```sh\nnpm install @innofake/b0t-switch\n```",
+          "name": "Switch",
+          "cssProperties": [
+            {
+              "description": "Label font color.",
+              "name": "--innofake-b0t-switch-label-font-color"
+            },
+            {
+              "description": "Label font family.",
+              "name": "--innofake-b0t-switch-label-font-family"
+            },
+            {
+              "description": "Label font size.",
+              "name": "--innofake-b0t-switch-label-font-size"
+            },
+            {
+              "description": "Label font weight.",
+              "name": "--innofake-b0t-switch-label-font-weight"
+            },
+            {
+              "description": "Label left margin spacing.",
+              "name": "--innofake-b0t-switch-label-spacing"
+            },
+            {
+              "description": "Hint text font color.",
+              "name": "--innofake-b0t-switch-input-hint-label-font-color"
+            },
+            {
+              "description": "Hint text font family.",
+              "name": "--innofake-b0t-switch-input-hint-label-font-family"
+            },
+            {
+              "description": "Hint text font size.",
+              "name": "--innofake-b0t-switch-input-hint-label-font-size"
+            },
+            {
+              "description": "Hint text font weight.",
+              "name": "--innofake-b0t-switch-input-hint-label-font-weight"
+            },
+            {
+              "description": "Error text font color.",
+              "name": "--innofake-b0t-switch-input-error-label-font-color"
+            },
+            {
+              "description": "Error text font family.",
+              "name": "--innofake-b0t-switch-input-error-label-font-family"
+            },
+            {
+              "description": "Error text font size.",
+              "name": "--innofake-b0t-switch-input-error-label-font-size"
+            },
+            {
+              "description": "Error text font weight.",
+              "name": "--innofake-b0t-switch-input-error-label-font-weight"
+            },
+            {
+              "description": "Track width.",
+              "name": "--innofake-b0t-switch-track-width"
+            },
+            {
+              "description": "Track height.",
+              "name": "--innofake-b0t-switch-track-height"
+            },
+            {
+              "description": "Track background color.",
+              "name": "--innofake-b0t-switch-track-background-color"
+            },
+            {
+              "description": "Track checked background color.",
+              "name": "--innofake-b0t-switch-checked-track-background-color"
+            },
+            {
+              "description": "Track disabled background color.",
+              "name": "--innofake-b0t-switch-disabled-track-background-color"
+            },
+            {
+              "description": "Track border radius.",
+              "name": "--innofake-b0t-switch-track-border-radius"
+            },
+            {
+              "description": "Track inset margins.",
+              "name": "--innofake-b0t-switch-track-inset"
+            },
+            {
+              "description": "Knob height.",
+              "name": "--innofake-b0t-switch-knob-height"
+            },
+            {
+              "description": "Knob width.",
+              "name": "--innofake-b0t-switch-knob-width"
+            },
+            {
+              "description": "Knob background color.",
+              "name": "--innofake-b0t-switch-knob-background-color"
+            },
+            {
+              "description": "Knob checked background color.",
+              "name": "--innofake-b0t-switch-checked-knob-background-color"
+            },
+            {
+              "description": "Knob disabled background color.",
+              "name": "--innofake-b0t-switch-disabled-knob-background-color"
+            },
+            {
+              "description": "Knob box shadow.",
+              "name": "--innofake-b0t-switch-knob-box-shadow"
+            },
+            {
+              "description": "Knob hover box shadow.",
+              "name": "--innofake-b0t-switch-knob-hover-box-shadow"
+            },
+            {
+              "description": "Knob checked hover box shadow.",
+              "name": "--innofake-b0t-switch-checked-hover-knob-box-shadow"
+            },
+            {
+              "description": "Knob disabled hover box shadow.",
+              "name": "--innofake-b0t-switch-disabled-knob-box-shadow"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "description": "The switch label text.",
+              "attribute": "label",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "data",
+              "type": {
+                "text": "Object"
+              },
+              "description": "Data associated with the component.",
+              "attribute": "data",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "hint",
+              "type": {
+                "text": "string"
+              },
+              "description": "A hint message to assist the user.",
+              "attribute": "hint",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "error",
+              "type": {
+                "text": "string"
+              },
+              "description": "An error message to guide users to correct a mistake.",
+              "attribute": "error",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "checked",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Indicator if the component is checked or not.",
+              "attribute": "checked",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Indicator if the component is disabled.",
+              "attribute": "disabled",
+              "reflects": true
+            },
+            {
+              "kind": "method",
+              "name": "focus"
+            }
+          ],
+          "events": [
+            {
+              "name": "value-changed",
+              "type": {
+                "text": "CustomEvent<{ old: Boolean; new: Boolean; }>"
+              },
+              "description": "Dispatched when the switch checked state is changed."
+            },
+            {
+              "name": "value-change",
+              "type": {
+                "text": "CustomEvent<{ old: Boolean; new: Boolean; }>"
+              },
+              "description": "Dispatched when the switch checked state is changed."
+            }
+          ],
+          "attributes": [
+            {
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "description": "The switch label text.",
+              "fieldName": "label"
+            },
+            {
+              "name": "data",
+              "type": {
+                "text": "Object"
+              },
+              "description": "Data associated with the component.",
+              "fieldName": "data"
+            },
+            {
+              "name": "hint",
+              "type": {
+                "text": "string"
+              },
+              "description": "A hint message to assist the user.",
+              "fieldName": "hint"
+            },
+            {
+              "name": "error",
+              "type": {
+                "text": "string"
+              },
+              "description": "An error message to guide users to correct a mistake.",
+              "fieldName": "error"
+            },
+            {
+              "name": "checked",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Indicator if the component is checked or not.",
+              "fieldName": "checked"
+            },
+            {
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Indicator if the component is disabled.",
+              "fieldName": "disabled"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "b0t-switch",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Switch",
+          "declaration": {
+            "name": "Switch",
+            "module": "packages/switch/components/Switch.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "b0t-switch",
+          "declaration": {
+            "name": "Switch",
+            "module": "packages/switch/components/Switch.ts"
+          }
+        }
+      ]
+    }
+  ]
+}
