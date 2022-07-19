@@ -4,6 +4,137 @@
   "modules": [
     {
       "kind": "javascript-module",
+      "path": "packages/label/components/Label.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "A simple label component that renders a styled text string.\n\n## Installation\n```sh\nnpm install @innofake/b0t-label\n```",
+          "name": "Label",
+          "cssProperties": [
+            {
+              "description": "Label font color.",
+              "name": "--innofake-b0t-label-font-color"
+            },
+            {
+              "description": "Label font family.",
+              "name": "--innofake-b0t-label-font-family"
+            },
+            {
+              "description": "Label font size.",
+              "name": "--innofake-b0t-label-font-size"
+            },
+            {
+              "description": "Label font weight.",
+              "name": "--innofake-b0t-label-font-weight"
+            },
+            {
+              "description": "Label cursor.",
+              "name": "--innofake-b0t-label-cursor"
+            },
+            {
+              "description": "Title label font size.",
+              "name": "--innofake-b0t-label-title-font-size"
+            },
+            {
+              "description": "Title label font weight.",
+              "name": "--innofake-b0t-label-title-font-weight"
+            },
+            {
+              "description": "Subtitle label font size.",
+              "name": "--innofake-b0t-label-subtitle-font-size"
+            },
+            {
+              "description": "Subtitle label font weight.",
+              "name": "--innofake-b0t-label-subtitle-font-weight"
+            },
+            {
+              "description": "Strong label font size.",
+              "name": "--innofake-b0t-label-strong-font-size"
+            },
+            {
+              "description": "Strong label font weight.",
+              "name": "--innofake-b0t-label-strong-font-weight"
+            },
+            {
+              "description": "Default label font size.",
+              "name": "--innofake-b0t-label-default-font-size"
+            },
+            {
+              "description": "Default label font weight.",
+              "name": "--innofake-b0t-label-default-font-weight"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "label",
+              "type": {
+                "text": "String"
+              },
+              "description": "The label string to display.",
+              "attribute": "label",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "type",
+              "type": {
+                "text": "\"default\"|\"title\"|\"subtitle\"|\"strong\"|String"
+              },
+              "description": "The type of label to display: - `default` Normal font weight. - `title` Larger font and weight. - `subtitle` Larger font and weight. - `strong` Largest font and weight.",
+              "default": "\"default\"",
+              "attribute": "type",
+              "reflects": true
+            }
+          ],
+          "attributes": [
+            {
+              "name": "label",
+              "type": {
+                "text": "String"
+              },
+              "description": "The label string to display.",
+              "fieldName": "label"
+            },
+            {
+              "name": "type",
+              "type": {
+                "text": "\"default\"|\"title\"|\"subtitle\"|\"strong\"|String"
+              },
+              "description": "The type of label to display: - `default` Normal font weight. - `title` Larger font and weight. - `subtitle` Larger font and weight. - `strong` Largest font and weight.",
+              "default": "\"default\"",
+              "fieldName": "type"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "b0t-label",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Label",
+          "declaration": {
+            "name": "Label",
+            "module": "packages/label/components/Label.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "b0t-label",
+          "declaration": {
+            "name": "Label",
+            "module": "packages/label/components/Label.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "packages/switch/components/Switch.ts",
       "declarations": [
         {
