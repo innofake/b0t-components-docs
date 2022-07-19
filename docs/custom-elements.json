@@ -135,6 +135,12 @@
     },
     {
       "kind": "javascript-module",
+      "path": "packages/label/components/other.txt",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
       "path": "packages/switch/components/Switch.ts",
       "declarations": [
         {
